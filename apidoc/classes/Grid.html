@@ -58,7 +58,7 @@
 					<a href="Grid.html">Grid</a>
 				</li>
 			</ul>
-			<h1>Class Grid&lt;Data, RowProps&gt;</h1>
+			<h1>Class Grid&lt;Data, RowProps, Key&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,10 @@
 						<h4>Data = <span class="tsd-signature-type">any</span></h4>
 					</li>
 					<li>
-						<h4>RowProps = <span class="tsd-signature-symbol">{}</span></h4>
+						<h4>RowProps = <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li>
+						<h4>Key = <span class="tsd-signature-type">string</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -80,7 +83,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">PureComponent</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">PureComponent</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Grid</span>
@@ -193,14 +196,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Grid&lt;Data, RowProps&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grid.html" class="tsd-signature-type" data-tsd-kind="Class">Grid</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Grid&lt;Data, RowProps, Key&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grid.html" class="tsd-signature-type" data-tsd-kind="Class">Grid</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides PureComponent&lt;IGridProps&lt;Data, RowProps&gt;,IGridState&gt;.constructor</p>
+								<p>Overrides PureComponent&lt;IGridProps&lt;Data, RowProps, Key&gt;, IGridState&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L165">packages/zent/src/grid/Grid.tsx:165</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L166">packages/zent/src/grid/Grid.tsx:166</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -209,16 +212,19 @@
 									<h4>Data = <span class="tsd-signature-type">any</span></h4>
 								</li>
 								<li>
-									<h4>RowProps = <span class="tsd-signature-symbol">{}</span></h4>
+									<h4>RowProps = <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+								<li>
+									<h4>Key = <span class="tsd-signature-type">string</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Grid.html" class="tsd-signature-type" data-tsd-kind="Class">Grid</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Grid.html" class="tsd-signature-type" data-tsd-kind="Class">Grid</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -231,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">body<wbr>Table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L155">packages/zent/src/grid/Grid.tsx:155</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L156">packages/zent/src/grid/Grid.tsx:156</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">foot<wbr>El<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L152">packages/zent/src/grid/Grid.tsx:152</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L153">packages/zent/src/grid/Grid.tsx:153</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">foot<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Footer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L151">packages/zent/src/grid/Grid.tsx:151</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L152">packages/zent/src/grid/Grid.tsx:152</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -290,7 +296,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Expand<wbr>Body<wbr>Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>expandRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L341">packages/zent/src/grid/Grid.tsx:341</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L342">packages/zent/src/grid/Grid.tsx:342</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -321,7 +327,7 @@
 					<div class="tsd-signature tsd-kind-icon">grid<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L150">packages/zent/src/grid/Grid.tsx:150</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L151">packages/zent/src/grid/Grid.tsx:151</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +337,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Batch<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;selectAll&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;removeAll&quot;</span>, datasets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L873">packages/zent/src/grid/Grid.tsx:873</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L871">packages/zent/src/grid/Grid.tsx:871</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -365,7 +371,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Body<wbr>Scroll<wbr>Run<wbr>Once<wbr>Next<wbr>Frame<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">UIEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ICancelable</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L570">packages/zent/src/grid/Grid.tsx:570</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L571">packages/zent/src/grid/Grid.tsx:571</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -375,7 +381,7 @@
 					<div class="tsd-signature tsd-kind-icon">header<wbr>El<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L153">packages/zent/src/grid/Grid.tsx:153</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L154">packages/zent/src/grid/Grid.tsx:154</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -385,7 +391,7 @@
 					<div class="tsd-signature tsd-kind-icon">header<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Header</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L154">packages/zent/src/grid/Grid.tsx:154</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L155">packages/zent/src/grid/Grid.tsx:155</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -395,7 +401,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L284">packages/zent/src/grid/Grid.tsx:284</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L285">packages/zent/src/grid/Grid.tsx:285</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -420,7 +426,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Left<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L290">packages/zent/src/grid/Grid.tsx:290</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L291">packages/zent/src/grid/Grid.tsx:291</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -445,7 +451,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Right<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L298">packages/zent/src/grid/Grid.tsx:298</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L299">packages/zent/src/grid/Grid.tsx:299</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -470,7 +476,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Scroll<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L161">packages/zent/src/grid/Grid.tsx:161</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L162">packages/zent/src/grid/Grid.tsx:162</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -480,7 +486,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Scroll<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L162">packages/zent/src/grid/Grid.tsx:162</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L163">packages/zent/src/grid/Grid.tsx:163</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -490,7 +496,7 @@
 					<div class="tsd-signature tsd-kind-icon">left<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L156">packages/zent/src/grid/Grid.tsx:156</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L157">packages/zent/src/grid/Grid.tsx:157</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -500,14 +506,14 @@
 					<div class="tsd-signature tsd-kind-icon">mounted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L142">packages/zent/src/grid/Grid.tsx:142</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L143">packages/zent/src/grid/Grid.tsx:143</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="props" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> props</h3>
-					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from PureComponent.props</p>
 						<ul>
@@ -547,7 +553,7 @@
 					<div class="tsd-signature tsd-kind-icon">render<wbr>Selection<wbr>Checkbox<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L918">packages/zent/src/grid/Grid.tsx:918</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L916">packages/zent/src/grid/Grid.tsx:916</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -572,7 +578,7 @@
 					<div class="tsd-signature tsd-kind-icon">render<wbr>Selection<wbr>Radio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L941">packages/zent/src/grid/Grid.tsx:941</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L939">packages/zent/src/grid/Grid.tsx:939</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -597,7 +603,7 @@
 					<div class="tsd-signature tsd-kind-icon">right<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L157">packages/zent/src/grid/Grid.tsx:157</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L158">packages/zent/src/grid/Grid.tsx:158</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -607,7 +613,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L158">packages/zent/src/grid/Grid.tsx:158</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L159">packages/zent/src/grid/Grid.tsx:159</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -617,7 +623,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L159">packages/zent/src/grid/Grid.tsx:159</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L160">packages/zent/src/grid/Grid.tsx:160</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -627,7 +633,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="../modules.html#GridScrollPosition" class="tsd-signature-type" data-tsd-kind="Type alias">GridScrollPosition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L160">packages/zent/src/grid/Grid.tsx:160</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L161">packages/zent/src/grid/Grid.tsx:161</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -637,7 +643,7 @@
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Props<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = {}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L143">packages/zent/src/grid/Grid.tsx:143</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L144">packages/zent/src/grid/Grid.tsx:144</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -674,7 +680,7 @@
 					<div class="tsd-signature tsd-kind-icon">sticky<wbr>Head<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L163">packages/zent/src/grid/Grid.tsx:163</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L164">packages/zent/src/grid/Grid.tsx:164</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -684,7 +690,7 @@
 					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L149">packages/zent/src/grid/Grid.tsx:149</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L150">packages/zent/src/grid/Grid.tsx:150</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -724,10 +730,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="defaultProps" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Props</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L122">packages/zent/src/grid/Grid.tsx:122</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L123">packages/zent/src/grid/Grid.tsx:123</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -776,7 +782,7 @@
 					<a name="UNSAFE_componentWillReceiveProps" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -811,7 +817,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextContext: <span class="tsd-signature-type">any</span></h5>
@@ -825,7 +831,7 @@
 					<a name="UNSAFE_componentWillUpdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> UNSAFE_<wbr>component<wbr>Will<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">UNSAFE_<wbr>component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -858,7 +864,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -915,7 +921,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentDidMount</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1073">packages/zent/src/grid/Grid.tsx:1073</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1071">packages/zent/src/grid/Grid.tsx:1071</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -933,7 +939,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentDidUpdate</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1144">packages/zent/src/grid/Grid.tsx:1144</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1142">packages/zent/src/grid/Grid.tsx:1142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -987,20 +993,20 @@
 					<a name="componentWillReceiveProps" class="tsd-anchor"></a>
 					<h3>component<wbr>Will<wbr>Receive<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Receive<wbr>Props<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentWillReceiveProps</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1088">packages/zent/src/grid/Grid.tsx:1088</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1086">packages/zent/src/grid/Grid.tsx:1086</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1018,7 +1024,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentWillUnmount</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1082">packages/zent/src/grid/Grid.tsx:1082</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1080">packages/zent/src/grid/Grid.tsx:1080</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1029,7 +1035,7 @@
 					<a name="componentWillUpdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> component<wbr>Will<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1061,7 +1067,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1084,7 +1090,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L559">packages/zent/src/grid/Grid.tsx:559</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L560">packages/zent/src/grid/Grid.tsx:560</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1149,7 +1155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L485">packages/zent/src/grid/Grid.tsx:485</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L486">packages/zent/src/grid/Grid.tsx:486</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1172,7 +1178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L472">packages/zent/src/grid/Grid.tsx:472</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L473">packages/zent/src/grid/Grid.tsx:473</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -1183,19 +1189,19 @@
 					<a name="getColumns" class="tsd-anchor"></a>
 					<h3>get<wbr>Columns</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Columns<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span>, columnsArg<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span>, expandRowKeysArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Columns<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span>, columnsArg<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span>, expandRowKeysArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L415">packages/zent/src/grid/Grid.tsx:415</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L416">packages/zent/src/grid/Grid.tsx:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> columnsArg: <a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -1218,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L279">packages/zent/src/grid/Grid.tsx:279</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L280">packages/zent/src/grid/Grid.tsx:280</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1244,7 +1250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L798">packages/zent/src/grid/Grid.tsx:798</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L799">packages/zent/src/grid/Grid.tsx:799</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1261,19 +1267,19 @@
 					<a name="getExpandRowKeys" class="tsd-anchor"></a>
 					<h3>get<wbr>Expand<wbr>Row<wbr>Keys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Expand<wbr>Row<wbr>Keys<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Expand<wbr>Row<wbr>Keys<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L187">packages/zent/src/grid/Grid.tsx:187</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L188">packages/zent/src/grid/Grid.tsx:188</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1290,7 +1296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L306">packages/zent/src/grid/Grid.tsx:306</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L307">packages/zent/src/grid/Grid.tsx:307</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1307,7 +1313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L503">packages/zent/src/grid/Grid.tsx:503</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L504">packages/zent/src/grid/Grid.tsx:504</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1324,7 +1330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L313">packages/zent/src/grid/Grid.tsx:313</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L314">packages/zent/src/grid/Grid.tsx:314</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1341,7 +1347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L511">packages/zent/src/grid/Grid.tsx:511</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L512">packages/zent/src/grid/Grid.tsx:512</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1352,19 +1358,19 @@
 					<a name="getSelectionColumn" class="tsd-anchor"></a>
 					<h3>get<wbr>Selection<wbr>Column</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Column<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span>, columnsArg<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Column<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span>, columnsArg<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L358">packages/zent/src/grid/Grid.tsx:358</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L359">packages/zent/src/grid/Grid.tsx:359</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>props: <a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> columnsArg: <a href="../interfaces/IGridInnerColumn.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridInnerColumn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -1378,13 +1384,13 @@
 					<a name="getSelectionPropsByItem" class="tsd-anchor"></a>
 					<h3>get<wbr>Selection<wbr>Props<wbr>ByItem</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Props<wbr>ByItem<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Data</span>, rowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, nextSelection<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridSelection.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridSelection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disabled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Props<wbr>ByItem<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Data</span>, rowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, nextSelection<span class="tsd-signature-symbol">?: </span><a href="../interfaces/IGridSelection.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridSelection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disabled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L811">packages/zent/src/grid/Grid.tsx:811</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L812">packages/zent/src/grid/Grid.tsx:812</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1396,7 +1402,7 @@
 									<h5>rowIndex: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nextSelection: <a href="../interfaces/IGridSelection.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridSelection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nextSelection: <a href="../interfaces/IGridSelection.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridSelection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>disabled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -1415,7 +1421,7 @@
 					<a name="getSnapshotBeforeUpdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Snapshot<wbr>Before<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<wbr>Before<wbr>Update<span class="tsd-signature-symbol">(</span>prevProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1437,7 +1443,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>prevProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>prevState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1457,7 +1463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1018">packages/zent/src/grid/Grid.tsx:1018</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1016">packages/zent/src/grid/Grid.tsx:1016</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1474,7 +1480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L646">packages/zent/src/grid/Grid.tsx:646</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L647">packages/zent/src/grid/Grid.tsx:647</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1514,7 +1520,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L628">packages/zent/src/grid/Grid.tsx:628</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L629">packages/zent/src/grid/Grid.tsx:629</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1537,7 +1543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L318">packages/zent/src/grid/Grid.tsx:318</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L319">packages/zent/src/grid/Grid.tsx:319</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1581,7 +1587,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L846">packages/zent/src/grid/Grid.tsx:846</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L844">packages/zent/src/grid/Grid.tsx:844</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1610,7 +1616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L265">packages/zent/src/grid/Grid.tsx:265</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L266">packages/zent/src/grid/Grid.tsx:266</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1633,7 +1639,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L271">packages/zent/src/grid/Grid.tsx:271</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L272">packages/zent/src/grid/Grid.tsx:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1659,7 +1665,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L633">packages/zent/src/grid/Grid.tsx:633</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L634">packages/zent/src/grid/Grid.tsx:634</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1676,7 +1682,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L640">packages/zent/src/grid/Grid.tsx:640</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L641">packages/zent/src/grid/Grid.tsx:641</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1699,7 +1705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L994">packages/zent/src/grid/Grid.tsx:994</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L992">packages/zent/src/grid/Grid.tsx:992</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1710,19 +1716,19 @@
 					<a name="onSelectChange" class="tsd-anchor"></a>
 					<h3>on<wbr>Select<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Select<wbr>Change<span class="tsd-signature-symbol">(</span>selectedRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Select<wbr>Change<span class="tsd-signature-symbol">(</span>selectedRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">[]</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L830">packages/zent/src/grid/Grid.tsx:830</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L831">packages/zent/src/grid/Grid.tsx:831</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>selectedRowKeys: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selectedRowKeys: <span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>data: <span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -1743,7 +1749,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1153">packages/zent/src/grid/Grid.tsx:1153</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1151">packages/zent/src/grid/Grid.tsx:1151</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1760,7 +1766,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L519">packages/zent/src/grid/Grid.tsx:519</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L520">packages/zent/src/grid/Grid.tsx:520</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1783,7 +1789,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L541">packages/zent/src/grid/Grid.tsx:541</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L542">packages/zent/src/grid/Grid.tsx:542</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1794,7 +1800,7 @@
 					<a name="setState" class="tsd-anchor"></a>
 					<h3>set<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>State&lt;K&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>State&lt;K&gt;<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1813,7 +1819,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>state: <a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>prevState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
@@ -1845,7 +1851,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L1060">packages/zent/src/grid/Grid.tsx:1060</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L1058">packages/zent/src/grid/Grid.tsx:1058</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1856,7 +1862,7 @@
 					<a name="shouldComponentUpdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> should<wbr>Component<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">should<wbr>Component<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">should<wbr>Component<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, nextState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span>, nextContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1879,7 +1885,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RowProps</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>nextState: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridState.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridState</a><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1902,7 +1908,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L207">packages/zent/src/grid/Grid.tsx:207</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L208">packages/zent/src/grid/Grid.tsx:208</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1919,7 +1925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/21d8374/packages/zent/src/grid/Grid.tsx#L961">packages/zent/src/grid/Grid.tsx:961</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/1c64cad/packages/zent/src/grid/Grid.tsx#L959">packages/zent/src/grid/Grid.tsx:959</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
